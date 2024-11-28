@@ -1,0 +1,33 @@
+.hero-section {
+  background-image: url('bg4.jpg'); /* Replace with your image path*/
+  background-size: cover; /* Cover the entire section*/
+  background-position: center; /* Center the image*/
+  background-repeat: no-repeat; /* Prevent the image from repeating*/
+}
+
+.hero-box {
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.7); /* Glowing effect */
+  transform: scale(1.05); /* Scale the box on hover */
+}
+
+.hero-box:hover {
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.7); /* Glowing effect */
+  transform: scale(1.05); /* Scale the box on hover */
+}
+
+.icon-effect {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for scaling and shadow*/
+}
+
+.icon-effect:hover {
+  transform: scale(1.1); /* Scale the icon slightly*/
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7), 0 0 30px rgba(0, 0, 0, 0.5); /* Glowing effect*/
+}
+
+.glowing-text {
+  transition: text-shadow 0.3s ease; /* Transition for text shadow*/
+}
+
+.glowing-text:hover {
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.7), 0 0 30px rgba(0, 0, 0, 0.5); /* Glowing effect*/
+}

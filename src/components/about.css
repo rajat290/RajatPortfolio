@@ -1,0 +1,53 @@
+.about-box {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for scaling and shadow */
+  background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient background */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.about-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.1);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: inherit;
+  z-index: 0;
+}
+
+.about-box:hover::before {
+  opacity: 1; /* Show overlay on hover */
+}
+
+.about-box:hover {
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.7); /* Glowing effect */
+  transform: scale(1.05); /* Scale the box on hover */
+}
+
+.image-effect {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for scaling and shadow */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.image-effect:hover {
+  transform: scale(1.1); /* Scale the image up */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7), 0 0 30px rgba(0, 0, 0, 0.5); /* Glowing effect */
+}
+
+/* Additional styles for the links */
+.about-box a {
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+  background-color: #007bff; /* Default button color */
+  border-radius: 5px; /* Rounded button corners */
+  padding: 10px 15px; /* Button padding */
+}
+
+.about-box a:hover {
+  background-color: #0056b3; /* Darker button color on hover */
+  color: white; /* Change text color on hover */
+}
